@@ -1,0 +1,877 @@
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:50.860Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:50.865Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:50.867Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.694Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.697Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.702Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.712Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.712Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.714Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.714Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.715Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.724Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.724Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 1. Response time: 10.
+Time for 'plugin worker 6352 code loading' 17.324600000000004
+Time for 'plugin worker 33036 code loading' 15.520599999999995
+Time for 'plugin worker 23556 code loading' 16.3455
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.787Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:51.788Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 13796 code loading' 16.424600000000005
+Time for 'plugin worker 29360 code loading' 15.3504
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.084Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 471.91679999999997ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.546Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 932.681ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.549Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 937.2604000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.605Z - Time taken for 'loadDefaultNxPlugins' 997.4583ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.719Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.720Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.721Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:52.722Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:53.788Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:53.792Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:53.794Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+Time for 'plugin worker 26804 code loading' 8.59559999999999
+Time for 'plugin worker 19380 code loading' 8.741100000000017
+Time for 'plugin worker 16884 code loading' 9.497799999999984
+Time for 'plugin worker 2132 code loading' 7.391199999999998
+Time for 'plugin worker 18768 code loading' 8.451700000000017
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.072Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.072Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.072Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.3448000000000775
+Time for 'nx-angular-json-plugin:createNodes' 1.2270999999998367
+Time for 'nx/core/package-json:createNodes' 1.685399999999845
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.087Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.090Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.090Z - Established a connection. Number of open connections: 1
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 39.249000000000024
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.366Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.366Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.368Z - Established a connection. Number of open connections: 2
+Time for 'daemon-message-serialization-GLOB' 0.12969999999995707
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.908Z - Received raw message of length 73
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.908Z - Received json message of type GLOB
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.910Z - Serializing response for GLOB message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.910Z - Responding to GLOB message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.911Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.912Z - Done responding to the client handleGlob
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.912Z - Handled json message GLOB. Handling time: 1. Response time: 2.
+Time for 'GLOB round trip' 8.54379999999992
+Time for 'deserialize daemon response - GLOB' 0.21149999999988722
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.05250000000023647
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.917Z - Received raw message of length 104
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.917Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.919Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.919Z - Responding to HASH_GLOB message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.919Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.919Z - Done responding to the client handleHashMultiGlob
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:56.919Z - Handled json message HASH_GLOB. Handling time: 2. Response time: 0.
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.203Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.203Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.204Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.204Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.204Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.204Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.204Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 0.
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.281Z - Established a connection. Number of open connections: 3
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:57.282Z - Closed a connection. Number of open connections: 2
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:58.089Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:58.089Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:58.089Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:58.089Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:53:58.091Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:19.752Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:19.759Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:19.760Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.933Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.935Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.940Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.952Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.952Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.954Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.954Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.955Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.960Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:20.960Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 6.
+Time for 'plugin worker 22760 code loading' 37.5519
+Time for 'plugin worker 1564 code loading' 17.797300000000007
+Time for 'plugin worker 31248 code loading' 45.0082
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:21.157Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:21.158Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 19384 code loading' 18.762500000000003
+Time for 'plugin worker 1084 code loading' 20.47959999999999
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:21.462Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 619.9584ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.148Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 1305.6781ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.187Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\js' 1346.5466000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.210Z - Time taken for 'loadDefaultNxPlugins' 1372.9460000000001ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.368Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.369Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.369Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:22.370Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:31.933Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:31.938Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:31.940Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.057Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.059Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.066Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.080Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.080Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.082Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.083Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.083Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.097Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.097Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 15.
+Time for 'plugin worker 3508 code loading' 19.759199999999993
+Time for 'plugin worker 34672 code loading' 21.297800000000002
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.158Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.159Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 29188 code loading' 24.207099999999997
+Time for 'plugin worker 21836 code loading' 20.861099999999993
+Time for 'plugin worker 15796 code loading' 23.96580000000001
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:33.550Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 616.8717999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.051Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 1115.0645ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.104Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 1170.7767000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.160Z - Time taken for 'loadDefaultNxPlugins' 1233.9824ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.292Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.292Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.293Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:34.294Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.209Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.214Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.215Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.955Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.957Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.961Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.973Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.973Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.975Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.976Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.976Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.985Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:58.986Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 11.
+Time for 'plugin worker 22940 code loading' 15.492599999999996
+Time for 'plugin worker 14028 code loading' 13.7406
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:59.046Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:59.047Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 17776 code loading' 16.089400000000005
+Time for 'plugin worker 31180 code loading' 15.962600000000002
+Time for 'plugin worker 3916 code loading' 14.3583
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:59.323Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 446.34670000000006ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:59.762Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 885.4766ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:59.763Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 885.2786000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:54:59.812Z - Time taken for 'loadDefaultNxPlugins' 938.8025000000002ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:00.001Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:00.003Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:12.699Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:12.704Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:12.705Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.502Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.503Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.508Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.519Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.519Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.521Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.522Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.523Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.531Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.531Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 10.
+Time for 'plugin worker 30268 code loading' 16.9516
+Time for 'plugin worker 32488 code loading' 16.116600000000005
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.592Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.592Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 19220 code loading' 20.296300000000002
+Time for 'plugin worker 15708 code loading' 16.204399999999993
+Time for 'plugin worker 10564 code loading' 15.783600000000007
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:13.884Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 466.8651ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.324Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 907.1284ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.336Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 917.8228999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.408Z - Time taken for 'loadDefaultNxPlugins' 994.9555999999998ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.511Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.511Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.512Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:14.513Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:35.254Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:35.260Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:35.262Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.064Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.066Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.072Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.084Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.084Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.086Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.087Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.088Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.098Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.098Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 12.
+Time for 'plugin worker 3288 code loading' 17.2151
+Time for 'plugin worker 27172 code loading' 15.695400000000006
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.159Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.160Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 13476 code loading' 14.9775
+Time for 'plugin worker 34564 code loading' 16.520199999999996
+Time for 'plugin worker 17528 code loading' 17.740500000000004
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.524Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 548.4297000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.966Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 990.4033ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:36.973Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 995.4870999999998ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:37.057Z - Time taken for 'loadDefaultNxPlugins' 1085.9009ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:37.196Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:37.197Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:51.985Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:51.989Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:51.990Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.756Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.757Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.762Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.772Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.773Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.775Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.775Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.776Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.784Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.784Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 1. Response time: 9.
+Time for 'plugin worker 23680 code loading' 18.2265
+Time for 'plugin worker 25076 code loading' 15.266799999999996
+Time for 'plugin worker 30068 code loading' 17.2697
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.850Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:52.851Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 30044 code loading' 16.7297
+Time for 'plugin worker 24092 code loading' 13.616799999999998
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.126Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 453.5018ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.545Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 872.7803999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.559Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 885.6784000000002ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.615Z - Time taken for 'loadDefaultNxPlugins' 946.5873000000001ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.727Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.728Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.728Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:55:53.729Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:03.390Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:03.395Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:03.397Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.201Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.203Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.207Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.217Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.217Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.219Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.219Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.220Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.228Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.228Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 9.
+Time for 'plugin worker 31244 code loading' 15.730800000000002
+Time for 'plugin worker 8776 code loading' 14.0912
+Time for 'plugin worker 6132 code loading' 16.2342
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.291Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.292Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 33924 code loading' 16.1944
+Time for 'plugin worker 26736 code loading' 14.9662
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.577Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 456.67089999999985ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.978Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 857.6942000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:04.980Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 859.3299ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:05.047Z - Time taken for 'loadDefaultNxPlugins' 930.7362ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:05.189Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:05.189Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:05.190Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:05.192Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:21.223Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:21.228Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:21.230Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.144Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.146Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.152Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.164Z - Received raw message of length 32
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.165Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.167Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.168Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.169Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.179Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.179Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 1. Response time: 12.
+Time for 'plugin worker 248 code loading' 18.8356
+Time for 'plugin worker 26912 code loading' 17.737399999999994
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.240Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.241Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 8264 code loading' 23.884599999999992
+Time for 'plugin worker 24336 code loading' 15.610299999999995
+Time for 'plugin worker 25152 code loading' 16.120399999999997
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:22.592Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 542.6467ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.092Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 1042.6357000000003ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.112Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 1060.2476000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.146Z - Time taken for 'loadDefaultNxPlugins' 1102.7586999999999ms
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+    at Server.setupListenHandle [as _listen2] (node:net:1885:21)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2083:5)
+    at c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:415:20
+    at new Promise (<anonymous>)
+    at startServer (c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\server.js:413:12)
+    at async c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\daemon\server\start.js:8:9
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '\\\\.\\pipe\\nx\\C:\\Users\\yatr0316\\AppData\\Local\\Temp\\5\\a629f9069910c4952e49\\d.sock',
+  port: -1
+}
+
+Node.js v22.10.0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.304Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.304Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.305Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:23.306Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:33.249Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:33.255Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:33.258Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:34.290Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:34.292Z - Established a connection. Number of open connections: 2
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:34.297Z - Closed a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:34.297Z - Closed a connection. Number of open connections: 0
+Time for 'plugin worker 17316 code loading' 20.289
+Time for 'plugin worker 16764 code loading' 17.771500000000003
+Time for 'plugin worker 20776 code loading' 17.543499999999995
+Time for 'plugin worker 32400 code loading' 18.76760000000001
+Time for 'plugin worker 7340 code loading' 19.691500000000005
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:34.747Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 568.9571000000001ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.216Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 1037.3473999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.265Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 1084.6935999999998ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.323Z - Time taken for 'loadDefaultNxPlugins' 1149.6927999999998ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.926Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.926Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.926Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:35.945Z - Time taken for 'loadSpecifiedNxPlugins' 1753.5828ms
+Time for 'nx-angular-json-plugin:createNodes' 1.2522000000001299
+Time for 'nx/core/project-json:createNodes' 0.6358999999999924
+Time for 'nx/core/package-json:createNodes' 2.3519999999998618
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 56.36169999999993
+Time for '@nx/eslint/plugin:createNodes' 2767.6386
+Time for 'workspace context init' 5.100500000000011
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:38.910Z - Time taken for 'build-project-configs' 2927.1112ms
+Time for 'build typescript dependencies' 217.61009999999987
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:39.318Z - Time taken for 'total execution time for createProjectGraph()' 422.20180000000073ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:42.816Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:42.820Z - [WATCHER]: package.json was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.033Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.033Z - [REQUEST]: package.json
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.034Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.044Z - Time taken for 'hash changed files from watcher' 0.593300000000454ms
+Time for 'nx/core/project-json:createNodes' 0.4602999999988242
+Time for 'nx-angular-json-plugin:createNodes' 1.1678999999985535
+Time for 'nx/core/package-json:createNodes' 1.2602999999999156
+Time for '@nx/eslint/plugin:createNodes' 26.325699999999415
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 22.67399999999907
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.095Z - Time taken for 'build-project-configs' 38.3718000000008ms
+Time for 'build typescript dependencies' 116.53700000000026
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.251Z - Time taken for 'total execution time for createProjectGraph()' 165.96270000000004ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.715Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.720Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (sources)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.720Z - [WATCHER]: Stopping the watcher for c:\Wokrspace\Angular\Architecture\arch-app (outputs)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:43.722Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:48.401Z - Started listening on: \\.\pipe\nx\C:\Users\yatr0316\AppData\Local\Temp\5\a629f9069910c4952e49\d.sock
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:48.405Z - [WATCHER]: Subscribed to changes within: c:\Wokrspace\Angular\Architecture\arch-app (native)
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:48.407Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:49.331Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:49.336Z - Closed a connection. Number of open connections: 0
+Time for 'plugin worker 1676 code loading' 22.2553
+Time for 'plugin worker 31820 code loading' 19.311
+Time for 'plugin worker 32060 code loading' 17.6973
+Time for 'plugin worker 14276 code loading' 17.151400000000002
+Time for 'plugin worker 30104 code loading' 16.6252
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:49.723Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\adapter\angular-json' 499.3645999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.163Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\package-json' 938.8138999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.184Z - Time taken for 'Load Nx Plugin: c:\Wokrspace\Angular\Architecture\arch-app\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 958.8374999999999ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.251Z - Time taken for 'loadDefaultNxPlugins' 1031.0725ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.632Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.633Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.633Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:50.647Z - Time taken for 'loadSpecifiedNxPlugins' 1414.2529ms
+Time for 'nx-angular-json-plugin:createNodes' 0.7917999999999665
+Time for 'nx/core/project-json:createNodes' 0.40810000000010405
+Time for 'nx/core/package-json:createNodes' 2.347500000000082
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 39.52359999999999
+Time for '@nx/eslint/plugin:createNodes' 1926.2381
+Time for 'workspace context init' 3.847099999999955
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:52.637Z - Time taken for 'build-project-configs' 1963.8526999999995ms
+Time for 'build typescript dependencies' 100.75500000000011
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:52.883Z - Time taken for 'total execution time for createProjectGraph()' 252.63280000000032ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:54.732Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:54.733Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:56:58.954Z - [NX-CONSOLE]: Successfully pulled latest Nx to C:\Users\yatr0316\AppData\Local\Temp\5\tmp-31544-l9o137F0Zg6z
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:02.447Z - [NX-CONSOLE]: Using local implementation (NX_USE_LOCAL=true or inner call)
+DEBUG nx::native::ide::install: Detected editor: Cursor
+DEBUG nx::native::ide::install: Checking if Nx Console extension is installed with: cursor.cmd --list-extensions
+DEBUG nx::native::ide::install: Nx Console extension is installed
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:03.526Z - [NX-CONSOLE]: Console status check completed, shouldPrompt: false
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:39.789Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:39.792Z - [WATCHER]: src/app/app.config.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:40.005Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:40.006Z - [REQUEST]: src/app/app.config.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:40.006Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:40.013Z - Time taken for 'hash changed files from watcher' 0.33109999999578577ms
+Time for 'nx-angular-json-plugin:createNodes' 0.8890000000028522
+Time for 'nx/core/project-json:createNodes' 0.43530000000464497
+Time for 'nx/core/package-json:createNodes' 1.4781000000002678
+Time for '@nx/eslint/plugin:createNodes' 13.775399999998626
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 17.051500000001397
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:40.048Z - Time taken for 'build-project-configs' 28.06930000000284ms
+Time for 'build typescript dependencies' 12.073700000000827
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:40.093Z - Time taken for 'total execution time for createProjectGraph()' 51.74819999999454ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:50.799Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:57:50.799Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.006Z - [WATCHER]: src/app/features/products/models/product.model.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.006Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.238Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.240Z - [WATCHER]: src/app/features/products/models/product.model.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.421Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.421Z - [REQUEST]: src/app/features/products/models/product.model.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.421Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.426Z - Time taken for 'hash changed files from watcher' 0.38479999999981374ms
+Time for 'nx/core/project-json:createNodes' 0.27950000000419095
+Time for 'nx-angular-json-plugin:createNodes' 0.6045000000012806
+Time for 'nx/core/package-json:createNodes' 0.9698999999964144
+Time for '@nx/eslint/plugin:createNodes' 9.668700000009267
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 15.168699999994715
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.461Z - Time taken for 'build-project-configs' 24.935599999997066ms
+Time for 'build typescript dependencies' 10.967399999994086
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:40.500Z - Time taken for 'total execution time for createProjectGraph()' 45.44220000000496ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:44.664Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:44.666Z - [WATCHER]: src/app/features/products/services/products-data.service.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:44.782Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:44.784Z - [WATCHER]: src/app/features/products/services/products-data.service.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:45.474Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:45.474Z - [REQUEST]: src/app/features/products/services/products-data.service.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:45.474Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:45.479Z - Time taken for 'hash changed files from watcher' 0.16220000000612345ms
+Time for 'nx-angular-json-plugin:createNodes' 0.7584999999962747
+Time for 'nx/core/package-json:createNodes' 0.6997000000119442
+Time for 'nx/core/project-json:createNodes' 0.3351000000111526
+Time for '@nx/eslint/plugin:createNodes' 11.250499999994645
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 16.260500000003958
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:45.514Z - Time taken for 'build-project-configs' 26.270599999988917ms
+Time for 'build typescript dependencies' 6.979900000005728
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:45.545Z - Time taken for 'total execution time for createProjectGraph()' 37.822999999989406ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:47.334Z - [WATCHER]: src/app/features/products/store/products.actions.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:47.334Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:47.566Z - [WATCHER]: src/app/features/products/store/products.actions.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:47.566Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:48.947Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:48.947Z - [REQUEST]: src/app/features/products/store/products.actions.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:48.948Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:48.951Z - Time taken for 'hash changed files from watcher' 0.24739999999292195ms
+Time for 'nx/core/project-json:createNodes' 0.10229999999864958
+Time for 'nx-angular-json-plugin:createNodes' 0.5916999999899417
+Time for 'nx/core/package-json:createNodes' 0.704200000007404
+Time for '@nx/eslint/plugin:createNodes' 9.334900000001653
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 12.956100000010338
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:48.981Z - Time taken for 'build-project-configs' 21.389400000000023ms
+Time for 'build typescript dependencies' 5.459000000002561
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:49.012Z - Time taken for 'total execution time for createProjectGraph()' 36.89770000000135ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:54.161Z - [WATCHER]: src/app/features/products/store/products.reducer.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:54.162Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:54.279Z - [WATCHER]: src/app/features/products/store/products.reducer.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:54.279Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:57.375Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:57.375Z - [REQUEST]: src/app/features/products/store/products.reducer.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:57.375Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.29869999999937136
+Time for 'nx-angular-json-plugin:createNodes' 0.6891000000032363
+Time for 'nx/core/package-json:createNodes' 0.928700000004028
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:57.381Z - Time taken for 'hash changed files from watcher' 0.3150000000023283ms
+Time for '@nx/eslint/plugin:createNodes' 8.341899999999441
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 12.637699999992037
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:57.414Z - Time taken for 'build-project-configs' 23.556200000006356ms
+Time for 'build typescript dependencies' 5.745999999999185
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:58:57.445Z - Time taken for 'total execution time for createProjectGraph()' 39.91740000000573ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:04.157Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:04.159Z - [WATCHER]: src/app/features/products/store/products.effects.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:04.254Z - [WATCHER]: src/app/features/products/store/products.effects.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:04.254Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:04.939Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:04.941Z - [WATCHER]: src/app/features/products/store/products.selectors.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:05.020Z - [WATCHER]: src/app/features/products/store/products.selectors.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:05.021Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:10.570Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:10.570Z - [REQUEST]: src/app/features/products/store/products.effects.ts,src/app/features/products/store/products.selectors.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:10.570Z - [REQUEST]: 
+Time for 'nx-angular-json-plugin:createNodes' 0.4085999999952037
+Time for 'nx/core/project-json:createNodes' 0.13519999998970889
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:10.576Z - Time taken for 'hash changed files from watcher' 0.536099999997532ms
+Time for 'nx/core/package-json:createNodes' 0.8165999999910127
+Time for '@nx/eslint/plugin:createNodes' 9.104099999996834
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 13.403800000000047
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:10.604Z - Time taken for 'build-project-configs' 21.67280000000028ms
+Time for 'build typescript dependencies' 7.656099999992875
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:10.636Z - Time taken for 'total execution time for createProjectGraph()' 36.59030000001076ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:16.029Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:16.029Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:18.540Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:18.542Z - [WATCHER]: src/app/features/products/components/product-card.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:18.636Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:18.639Z - [WATCHER]: src/app/features/products/components/product-card.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.531Z - [WATCHER]: src/app/features/products/components/product-list.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.532Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.693Z - [WATCHER]: src/app/features/products/components/product-list.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.694Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.956Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.956Z - [REQUEST]: src/app/features/products/components/product-card.component.ts,src/app/features/products/components/product-list.component.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.956Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.2816000000166241
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.961Z - Time taken for 'hash changed files from watcher' 0.579200000007404ms
+Time for 'nx-angular-json-plugin:createNodes' 0.7210999999952037
+Time for 'nx/core/package-json:createNodes' 1.178299999999581
+Time for '@nx/eslint/plugin:createNodes' 10.037099999986822
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 16.20000000001164
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:24.998Z - Time taken for 'build-project-configs' 25.34429999999702ms
+Time for 'build typescript dependencies' 11.448199999984354
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:25.042Z - Time taken for 'total execution time for createProjectGraph()' 51.00460000001476ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:32.647Z - [WATCHER]: src/app/features/products/containers/products-page.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:32.647Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:32.740Z - [WATCHER]: src/app/features/products/containers/products-page.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:32.740Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:39.060Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:39.061Z - [REQUEST]: src/app/features/products/containers/products-page.component.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:39.061Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.09559999997145496
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:39.065Z - Time taken for 'hash changed files from watcher' 0.20310000001336448ms
+Time for 'nx-angular-json-plugin:createNodes' 0.49040000000968575
+Time for 'nx/core/package-json:createNodes' 0.8893000000098255
+Time for '@nx/eslint/plugin:createNodes' 8.741500000003725
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 12.889899999980116
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:39.095Z - Time taken for 'build-project-configs' 21.916600000025937ms
+Time for 'build typescript dependencies' 8.045299999997951
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:39.127Z - Time taken for 'total execution time for createProjectGraph()' 38.295100000017555ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:41.722Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:41.724Z - [WATCHER]: src/app/features/products/index.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:41.806Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:41.808Z - [WATCHER]: src/app/features/products/index.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:43.106Z - [WATCHER]: src/app/features/products/products.routes.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:43.107Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:43.273Z - [WATCHER]: src/app/features/products/products.routes.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:43.273Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:48.135Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:48.135Z - [REQUEST]: src/app/features/products/index.ts,src/app/features/products/products.routes.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:48.135Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.2739000000001397
+Time for 'nx-angular-json-plugin:createNodes' 0.6046999999962281
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:48.141Z - Time taken for 'hash changed files from watcher' 0.4942000000155531ms
+Time for 'nx/core/package-json:createNodes' 1.1112999999895692
+Time for '@nx/eslint/plugin:createNodes' 9.22799999997369
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 13.556099999987055
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:48.171Z - Time taken for 'build-project-configs' 22.437200000014855ms
+Time for 'build typescript dependencies' 7.580400000006193
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:48.203Z - Time taken for 'total execution time for createProjectGraph()' 37.20130000001518ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:54.272Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:54.272Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:54.914Z - [WATCHER]: src/app/features/products/containers/product-details-page.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:54.915Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:55.049Z - [WATCHER]: src/app/features/products/containers/product-details-page.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:55.050Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:56.477Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:56.479Z - [WATCHER]: src/app/core/services/index.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:56.598Z - [WATCHER]: src/app/core/services/index.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T09:59:56.598Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:01.320Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:01.320Z - [REQUEST]: src/app/features/products/containers/product-details-page.component.ts,src/app/core/services/index.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:01.320Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:01.324Z - Time taken for 'hash changed files from watcher' 0.4327000000048429ms
+Time for 'nx/core/project-json:createNodes' 0.13639999998849817
+Time for 'nx-angular-json-plugin:createNodes' 0.630299999989802
+Time for 'nx/core/package-json:createNodes' 0.6707000000169501
+Time for '@nx/eslint/plugin:createNodes' 12.589000000007218
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 14.332800000003772
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:01.358Z - Time taken for 'build-project-configs' 22.821200000005774ms
+Time for 'build typescript dependencies' 13.319900000002235
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:01.400Z - Time taken for 'total execution time for createProjectGraph()' 48.66400000001886ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:03.355Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:03.358Z - [WATCHER]: src/app/shared/components/index.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:03.444Z - [WATCHER]: src/app/shared/components/index.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:03.445Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:04.323Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:04.325Z - [WATCHER]: src/app/app.routes.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:09.768Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:09.768Z - [REQUEST]: src/app/shared/components/index.ts,src/app/app.routes.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:09.768Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:09.772Z - Time taken for 'hash changed files from watcher' 0.41279999999096617ms
+Time for 'nx/core/project-json:createNodes' 0.2587000000057742
+Time for 'nx-angular-json-plugin:createNodes' 0.49210000000311993
+Time for 'nx/core/package-json:createNodes' 0.68049999998766
+Time for '@nx/eslint/plugin:createNodes' 7.895099999994272
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 12.220100000005914
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:09.803Z - Time taken for 'build-project-configs' 21.713700000022072ms
+Time for 'build typescript dependencies' 6.647099999972852
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:09.835Z - Time taken for 'total execution time for createProjectGraph()' 37.67050000000745ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:15.335Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:15.335Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:15.346Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:15.348Z - [WATCHER]: src/app/app.config.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:17.228Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:17.230Z - [WATCHER]: src/app/app.component.ts was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:21.751Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:21.751Z - [REQUEST]: src/app/app.config.ts,src/app/app.component.ts
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:21.751Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.09080000000540167
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:21.755Z - Time taken for 'hash changed files from watcher' 0.6034999999974389ms
+Time for 'nx-angular-json-plugin:createNodes' 0.5015999999886844
+Time for 'nx/core/package-json:createNodes' 0.7347000000008848
+Time for '@nx/eslint/plugin:createNodes' 7.019000000000233
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 12.136100000003353
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:21.782Z - Time taken for 'build-project-configs' 20.701600000000326ms
+Time for 'build typescript dependencies' 4.769799999980023
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:21.810Z - Time taken for 'total execution time for createProjectGraph()' 32.575700000015786ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:28.260Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:28.260Z - Closed a connection. Number of open connections: 0
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:52.531Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:52.533Z - [WATCHER]: ARCHITECTURE.md was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:52.877Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:52.879Z - [WATCHER]: ARCHITECTURE.md was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:58.942Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:58.943Z - [REQUEST]: ARCHITECTURE.md
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:58.943Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:58.946Z - Time taken for 'hash changed files from watcher' 0.4698999999964144ms
+Time for 'nx/core/project-json:createNodes' 0.06919999999809079
+Time for 'nx-angular-json-plugin:createNodes' 0.36219999997410923
+Time for 'nx/core/package-json:createNodes' 0.5731999999843538
+Time for '@nx/eslint/plugin:createNodes' 6.182299999985844
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 11.059899999992922
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:58.973Z - Time taken for 'build-project-configs' 19.76919999998063ms
+Time for 'build typescript dependencies' 5.744799999985844
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:59.003Z - Time taken for 'total execution time for createProjectGraph()' 33.30909999998403ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:59.081Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:59.083Z - [WATCHER]: .eslintignore was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:59.206Z - [WATCHER]: .eslintignore was modified
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:00:59.207Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:05.489Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:05.489Z - [REQUEST]: .eslintignore
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:05.489Z - [REQUEST]: 
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:05.493Z - Time taken for 'hash changed files from watcher' 0.3464000000094529ms
+Time for 'nx/core/project-json:createNodes' 0.16079999998328276
+Time for 'nx-angular-json-plugin:createNodes' 0.6908999999868684
+Time for 'nx/core/package-json:createNodes' 0.8665000000037253
+Time for '@nx/eslint/plugin:createNodes' 8.934799999988172
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 14.02390000000014
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:05.524Z - Time taken for 'build-project-configs' 22.54460000002291ms
+Time for 'build typescript dependencies' 4.119700000010198
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:05.552Z - Time taken for 'total execution time for createProjectGraph()' 33.69880000001285ms
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:10.237Z - Established a connection. Number of open connections: 1
+[NX v22.1.0 Daemon Server] - 2025-11-20T10:01:10.237Z - Closed a connection. Number of open connections: 0
