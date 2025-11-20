@@ -1,0 +1,13 @@
+> Building...
+√ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          |   1.32 MB | 
+polyfills.js        | polyfills     |  89.77 kB | 
+styles.css          | styles        | 639 bytes | 
+
+                    | Initial total |   1.41 MB
+
+Application bundle generation complete. [13.563 seconds]
+
+Output location: c:\Wokrspace\Angular\Architecture\arch-app\dist\apps\main-application
+

@@ -7,8 +7,7 @@
       "files": ["*.ts"],
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:rxjs-angular/recommended"
+        "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
@@ -26,16 +25,7 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ],
-        "rxjs-angular/prefer-takeuntil": [
-          "error",
-          {
-            "alias": ["untilDestroyed"],
-            "checkDestroy": false
-          }
-        ],
-        "rxjs-angular/prefer-async-pipe": "error",
-        "rxjs-angular/prefer-composition": "warn"
+        ]
       }
     },
     {
