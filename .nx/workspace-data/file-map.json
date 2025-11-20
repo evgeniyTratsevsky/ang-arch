@@ -4,6 +4,9 @@
   "pathMappings": {
     "ui-kit": [
       "libs/ui-kit/src/index.ts"
+    ],
+    "data-access": [
+      "libs/data-access/src/index.ts"
     ]
   },
   "nxJsonPlugins": [
@@ -38,7 +41,7 @@
         },
         {
           "file": "apps/main-application/src/app/app.component.html",
-          "hash": "4857018015222991800"
+          "hash": "848395303240231261"
         },
         {
           "file": "apps/main-application/src/app/app.component.scss",
@@ -53,26 +56,59 @@
         },
         {
           "file": "apps/main-application/src/app/app.component.ts",
-          "hash": "5103457505373255319",
+          "hash": "14079047996592044707",
           "deps": [
             "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/main-application/src/app/app.config.ts",
+          "hash": "11647368702661052914",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/main-application/src/app/app.routes.ts",
+          "hash": "16682699315082349854",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/main-application/src/app/features/home/home.component.ts",
+          "hash": "2492546719296993945",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
             "npm:@angular/router",
             "ui-kit"
           ]
         },
         {
-          "file": "apps/main-application/src/app/app.config.ts",
-          "hash": "430767598464114251",
+          "file": "apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts",
+          "hash": "10396443605269429342",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/router"
+            "npm:@angular/common",
+            "npm:@angular/material",
+            "npm:@angular/forms"
           ]
         },
         {
-          "file": "apps/main-application/src/app/app.routes.ts",
-          "hash": "6185150965714414910",
+          "file": "apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts",
+          "hash": "12836410629755283453",
           "deps": [
-            "npm:@angular/router"
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:@angular/material",
+            "data-access",
+            "ui-kit"
           ]
         },
         {
@@ -119,6 +155,132 @@
         },
         {
           "file": "apps/main-application/tsconfig.spec.json",
+          "hash": "16817365645434738473"
+        }
+      ],
+      "data-access": [
+        {
+          "file": "libs/data-access/EXAMPLES.md",
+          "hash": "16050485124635912436"
+        },
+        {
+          "file": "libs/data-access/README.md",
+          "hash": "11805594998649863606"
+        },
+        {
+          "file": "libs/data-access/eslint.config.cjs",
+          "hash": "12698654860270931602",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/data-access/jest.config.cts",
+          "hash": "17644220407116800939"
+        },
+        {
+          "file": "libs/data-access/project.json",
+          "hash": "14528529669303503345"
+        },
+        {
+          "file": "libs/data-access/src/index.ts",
+          "hash": "1628938614273092928"
+        },
+        {
+          "file": "libs/data-access/src/lib/data-access/data-access.component.html",
+          "hash": "2519211809417913053"
+        },
+        {
+          "file": "libs/data-access/src/lib/data-access/data-access.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/data-access/src/lib/data-access/data-access.component.spec.ts",
+          "hash": "16505244027161320776",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/data-access/data-access.component.ts",
+          "hash": "12489850757631093526",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/examples/products-api.service.ts",
+          "hash": "16342222183302316813",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/examples/products-realtime.service.ts",
+          "hash": "451903546684246843",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/examples/simple-products.service.ts",
+          "hash": "13481895459054280685",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/services/crud-base.service.ts",
+          "hash": "6839365062712180724",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/services/real-time-data.service.ts",
+          "hash": "16403444203967855819",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/services/simple-crud.service.ts",
+          "hash": "17478915770762003990",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/lib/services/websocket.service.ts",
+          "hash": "14645205333224179624",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/data-access/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/data-access/tsconfig.json",
+          "hash": "2144333311920968337"
+        },
+        {
+          "file": "libs/data-access/tsconfig.lib.json",
+          "hash": "5209476885361492972"
+        },
+        {
+          "file": "libs/data-access/tsconfig.spec.json",
           "hash": "16817365645434738473"
         }
       ],
@@ -246,6 +408,18 @@
           "hash": "11805395507426869050"
         },
         {
+          "file": "DATA_ACCESS_SETUP.md",
+          "hash": "12578805746478237689"
+        },
+        {
+          "file": "FINAL_SUMMARY.md",
+          "hash": "7475071982787185328"
+        },
+        {
+          "file": "INTERCEPTORS_GUIDE.md",
+          "hash": "2535917745305583674"
+        },
+        {
           "file": "MIGRATION_PLAN.md",
           "hash": "6401520788301612926"
         },
@@ -259,7 +433,7 @@
         },
         {
           "file": "README.md",
-          "hash": "13014998712054939116"
+          "hash": "11503394839266519494"
         },
         {
           "file": "angular.json",
@@ -290,11 +464,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "11408502776913883308"
+          "hash": "3062856403319996447"
         },
         {
           "file": "package.json",
-          "hash": "12187000414528920312",
+          "hash": "15235598912555194462",
           "deps": [
             "npm:@angular-devkit/build-angular",
             "npm:@angular-devkit/core",
@@ -336,6 +510,7 @@
             "npm:ts-jest",
             "npm:ts-node",
             "npm:typescript",
+            "npm:@angular/animations",
             "npm:@angular/cdk",
             "npm:@angular/common",
             "npm:@angular/compiler",
@@ -392,7 +567,7 @@
         },
         {
           "file": "src/app/app.config.ts",
-          "hash": "3968697463710444547",
+          "hash": "13372249177638409806",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -412,8 +587,66 @@
           ]
         },
         {
+          "file": "src/app/core/interceptors/README.md",
+          "hash": "13689443919670103578"
+        },
+        {
+          "file": "src/app/core/interceptors/auth.interceptor.ts",
+          "hash": "7219817303864730265",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/cache.interceptor.ts",
+          "hash": "10393430928975505635",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/error-handling.interceptor.ts",
+          "hash": "384421596969283573",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/http-headers.interceptor.ts",
+          "hash": "6555785043697204885",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/index.ts",
+          "hash": "7972331750799442572"
+        },
+        {
+          "file": "src/app/core/interceptors/loading.interceptor.ts",
+          "hash": "17772184289514526613",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/logging.interceptor.ts",
+          "hash": "3896821291172172418",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
           "file": "src/app/core/services/index.ts",
-          "hash": "18101527317048362188"
+          "hash": "13524019798833921956"
         },
         {
           "file": "src/app/features/products/components/product-card.component.ts",
@@ -534,7 +767,7 @@
         },
         {
           "file": "tsconfig.base.json",
-          "hash": "14705786869408616271"
+          "hash": "12383297301513822963"
         },
         {
           "file": "tsconfig.json",
@@ -548,5 +781,5 @@
     },
     "nonProjectFiles": []
   },
-  "externalNodesHash": "3639357132366727256"
+  "externalNodesHash": "16234305749799592786"
 }

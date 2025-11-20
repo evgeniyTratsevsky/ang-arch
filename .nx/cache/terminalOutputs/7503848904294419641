@@ -1,0 +1,39 @@
+> Building...
+√ Building...
+Application bundle generation failed. [3.529 seconds]
+
+▲ [WARNING] TS-998113: ButtonComponent is not used within the template of InterceptorsDemoComponent [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:29:4:
+      29 │     ButtonComponent,
+         ╵     ~~~~~~~~~~~~~~~
+
+
+X [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:176:14:
+      176 │               <div class="info-box warning">
+          ╵               ~~~~
+
+
+X [ERROR] NG5002: Unexpected closing tag "lib-card". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:231:12:
+      231 │             </lib-card>
+          ╵             ~~~~~~~~~~~
+
+
+X [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:386:2:
+      386 │   `,
+          ╵   ^
+
+
+X [ERROR] NG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.) [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:386:2:
+      386 │   `,
+          ╵   ^
+
+

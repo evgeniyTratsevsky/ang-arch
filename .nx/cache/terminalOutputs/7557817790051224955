@@ -1,0 +1,53 @@
+> Building...
+√ Building...
+Application bundle generation failed. [3.525 seconds]
+
+▲ [WARNING] TS-998113: ButtonComponent is not used within the template of InterceptorsDemoComponent [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:30:4:
+      30 │     ButtonComponent,
+         ╵     ~~~~~~~~~~~~~~~
+
+
+X [ERROR] Could not resolve "../../../../../src/app/core/interceptors"
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:12:31:
+      12 │ ... clearHttpCache } from '../../../../../src/app/core/interceptors';
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2307: Cannot find module '../../../../../src/app/core/interceptors' or its corresponding type declarations. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:12:31:
+      12 │ ... clearHttpCache } from '../../../../../src/app/core/interceptors';
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:177:14:
+      177 │               <div class="info-box warning">
+          ╵               ~~~~
+
+
+X [ERROR] NG5002: Unexpected closing tag "lib-card". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:232:12:
+      232 │             </lib-card>
+          ╵             ~~~~~~~~~~~
+
+
+X [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:387:2:
+      387 │   `,
+          ╵   ^
+
+
+X [ERROR] NG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.) [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:387:2:
+      387 │   `,
+          ╵   ^
+
+

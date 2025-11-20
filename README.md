@@ -244,8 +244,52 @@ nx test main-application --coverage
   run: nx affected:build --base=origin/main
 ```
 
+## 📡 Real-Time Data & HTTP CRUD
+
+### HTTP CRUD Wrapper
+```typescript
+import { SimpleCrudService } from 'data-access';
+
+@Injectable()
+export class UsersService extends SimpleCrudService<User> {
+  protected baseUrl = '/api/users';
+}
+```
+
+### HTTP Interceptors
+```typescript
+// 6 interceptors настроены автоматически:
+✅ Headers - стандартные HTTP headers
+✅ Auth - JWT авторизация
+✅ Error Handling - централизованная обработка ошибок
+✅ Logging - детальное логирование (dev)
+✅ Caching - кеширование GET запросов (5 мин)
+✅ Loading - отслеживание состояния загрузки
+
+// Документация: INTERCEPTORS_GUIDE.md
+```
+
+### Real-Time Updates
+```typescript
+import { SimpleProductsService } from 'data-access';
+
+data$ = this.productsService.data$;  // Auto-polling каждые 30 сек
+```
+
+### WebSocket Support
+```typescript
+import { WebSocketService } from 'data-access';
+
+this.wsService.connect('ws://localhost:3000').subscribe();
+this.wsService.on<Data>('event').subscribe(data => /*...*/);
+```
+
 ## 🎯 Roadmap
 
+- [x] HTTP CRUD Wrapper
+- [x] HTTP Interceptors (6 interceptors)
+- [x] Real-Time Data (polling)
+- [x] WebSocket Service
 - [ ] Миграция legacy кода из `src/app/` в libs
 - [ ] Добавить feature-auth библиотеку
 - [ ] Расширить UI Kit компонентами

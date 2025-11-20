@@ -1,0 +1,127 @@
+> Building...
+√ Building...
+Application bundle generation failed. [5.462 seconds]
+
+X [ERROR] TS2729: Property 'productsRealTime' is used before its initialization. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:395:15:
+      395 │   data$ = this.productsRealTime.data$;
+          ╵                ~~~~~~~~~~~~~~~~
+
+  'productsRealTime' is declared here.
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:388:4:
+      388 │     private productsRealTime: ProductsRealTimeService
+          ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2729: Property 'productsRealTime' is used before its initialization. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:396:18:
+      396 │   loading$ = this.productsRealTime.loading$;
+          ╵                   ~~~~~~~~~~~~~~~~
+
+  'productsRealTime' is declared here.
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:388:4:
+      388 │     private productsRealTime: ProductsRealTimeService
+          ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2729: Property 'productsRealTime' is used before its initialization. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:397:16:
+      397 │   error$ = this.productsRealTime.error$;
+          ╵                 ~~~~~~~~~~~~~~~~
+
+  'productsRealTime' is declared here.
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:388:4:
+      388 │     private productsRealTime: ProductsRealTimeService
+          ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'MonoTypeOperatorFunction<HttpEvent<TDto[]>>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<TDto[]>, TDto[]>'.
+  Type 'Observable<HttpEvent<TDto[]>>' is not assignable to type 'Observable<TDto[]>'.
+    Type 'HttpEvent<TDto[]>' is not assignable to type 'TDto[]'.
+      Type 'HttpSentEvent' is missing the following properties from type 'TDto[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:73:6:
+      73 │       retry(config?.retryAttempts ?? this.defaultRetryAttempts),
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'MonoTypeOperatorFunction<HttpEvent<PaginatedResponse<TDto>>>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<PaginatedResponse<TDto>>, PaginatedResponse<TDto>>'.
+  Type 'Observable<HttpEvent<PaginatedResponse<TDto>>>' is not assignable to type 'Observable<PaginatedResponse<TDto>>'.
+    Type 'HttpEvent<PaginatedResponse<TDto>>' is not assignable to type 'PaginatedResponse<TDto>'.
+      Type 'HttpSentEvent' is missing the following properties from type 'PaginatedResponse<TDto>': data, total, page, limit, totalPages [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:91:6:
+      91 │       retry(config?.retryAttempts ?? this.defaultRetryAttempts),
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'MonoTypeOperatorFunction<HttpEvent<TDto>>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<TDto>, TDto>'.
+  Type 'Observable<HttpEvent<TDto>>' is not assignable to type 'Observable<TDto>'.
+    Type 'HttpEvent<TDto>' is not assignable to type 'TDto'.
+      'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:108:6:
+      108 │       retry(config?.retryAttempts ?? this.defaultRetryAttempts),
+          ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'OperatorFunction<TDto, TModel>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<TDto>, TModel>'.
+  Type 'HttpEvent<TDto>' is not assignable to type 'TDto'.
+    'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:123:6:
+      123 │       map((dto: TDto) => this.mapFromDto(dto)),
+          ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'OperatorFunction<TDto, TModel>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<TDto>, TModel>'.
+  Type 'HttpEvent<TDto>' is not assignable to type 'TDto'.
+    'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:140:6:
+      140 │       map((dto: TDto) => this.mapFromDto(dto)),
+          ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'OperatorFunction<TDto, TModel>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<TDto>, TModel>'.
+  Type 'HttpEvent<TDto>' is not assignable to type 'TDto'.
+    'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:157:6:
+      157 │       map((dto: TDto) => this.mapFromDto(dto)),
+          ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2322: Type 'Observable<HttpEvent<void>>' is not assignable to type 'Observable<void>'.
+  Type 'HttpEvent<void>' is not assignable to type 'void'.
+    Type 'HttpSentEvent' is not assignable to type 'void'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:168:4:
+      168 │     return this.http.delete<void>(`${this.baseUrl}/${id}`, { ...o...
+          ╵     ~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'OperatorFunction<TDto[], TModel[]>' is not assignable to parameter of type 'OperatorFunction<HttpEvent<TDto[]>, TModel[]>'.
+  Type 'HttpEvent<TDto[]>' is not assignable to type 'TDto[]'.
+    Type 'HttpSentEvent' is missing the following properties from type 'TDto[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:181:6:
+      181 │       map((dtos: TDto[]) => dtos.map((dto: TDto) => this.mapFromD...
+          ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2322: Type 'Observable<HttpEvent<void>>' is not assignable to type 'Observable<void>'.
+  Type 'HttpEvent<void>' is not assignable to type 'void'.
+    Type 'HttpSentEvent' is not assignable to type 'void'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:189:4:
+      189 │     return this.http
+          ╵     ~~~~~~
+
+

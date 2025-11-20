@@ -11,12 +11,32 @@ import { routes } from './app.routes';
 import { productsReducer } from './features/products/store/products.reducer';
 import { ProductsEffects } from './features/products/store/products.effects';
 
+// HTTP Interceptors
+import {
+  httpHeadersInterceptor,
+  authInterceptor,
+  errorHandlingInterceptor,
+  loggingInterceptor,
+  cacheInterceptor,
+  loadingInterceptor,
+} from './core/interceptors';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([])),
+    // HTTP Client с interceptors (порядок важен!)
+    provideHttpClient(
+      withInterceptors([
+        loggingInterceptor,        // 1. Логирование (первым для полной информации)
+        httpHeadersInterceptor,    // 2. Добавление стандартных headers
+        authInterceptor,           // 3. Добавление токена авторизации
+        cacheInterceptor,          // 4. Кеширование GET запросов
+        loadingInterceptor,        // 5. Управление loading state
+        errorHandlingInterceptor,  // 6. Обработка ошибок (последним)
+      ])
+    ),
     provideStore({
       products: productsReducer,
     }),

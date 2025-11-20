@@ -1,0 +1,206 @@
+> Building...
+√ Building...
+Application bundle generation failed. [7.582 seconds]
+
+▲ [WARNING] TS-998113: ButtonComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    apps/main-application/src/app/app.component.ts:8:26:
+      8 │   imports: [RouterOutlet, ButtonComponent, CardComponent],
+        ╵                           ~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: CardComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    apps/main-application/src/app/app.component.ts:8:43:
+      8 │   imports: [RouterOutlet, ButtonComponent, CardComponent],
+        ╵                                            ~~~~~~~~~~~~~
+
+
+X [ERROR] NG2: Type 'boolean | null' is not assignable to type 'boolean'.
+  Type 'null' is not assignable to type 'boolean'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:44:13:
+      44 │             [disabled]="loading$ | async"
+         ╵              ~~~~~~~~
+
+
+X [ERROR] NG2: Type 'boolean | null' is not assignable to type 'boolean'.
+  Type 'null' is not assignable to type 'boolean'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:52:13:
+      52 │             [disabled]="loading$ | async"
+         ╵              ~~~~~~~~
+
+
+X [ERROR] TS2729: Property 'productsRealTime' is used before its initialization. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:384:15:
+      384 │   data$ = this.productsRealTime.data$;
+          ╵                ~~~~~~~~~~~~~~~~
+
+  'productsRealTime' is declared here.
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:393:4:
+      393 │     private productsRealTime: ProductsRealTimeService
+          ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2729: Property 'productsRealTime' is used before its initialization. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:385:18:
+      385 │   loading$ = this.productsRealTime.loading$;
+          ╵                   ~~~~~~~~~~~~~~~~
+
+  'productsRealTime' is declared here.
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:393:4:
+      393 │     private productsRealTime: ProductsRealTimeService
+          ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2729: Property 'productsRealTime' is used before its initialization. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:386:16:
+      386 │   error$ = this.productsRealTime.error$;
+          ╵                 ~~~~~~~~~~~~~~~~
+
+  'productsRealTime' is declared here.
+
+    apps/main-application/src/app/features/realtime-demo/realtime-demo.component.ts:393:4:
+      393 │     private productsRealTime: ProductsRealTimeService
+          ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2345: Argument of type 'ProductsApiService' is not assignable to parameter of type 'CrudBaseService<Product, Product>'.
+  Types of property 'mapFromDto' are incompatible.
+    Type '(dto: ProductDto) => Product' is not assignable to type '(dto: Product) => Product'.
+      Types of parameters 'dto' and 'dto' are incompatible.
+        Type 'Product' is missing the following properties from type 'ProductDto': price_cents, image_url, stock_quantity, created_at, updated_at [plugin angular-compiler]
+
+    libs/data-access/src/lib/examples/products-realtime.service.ts:37:10:
+      37 │     super(productsApi, wsService, {
+         ╵           ~~~~~~~~~~~
+
+
+X [ERROR] TS2339: Property 'map' does not exist on type 'HttpEvent<TDto[]>'.
+  Property 'map' does not exist on type 'HttpSentEvent'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:74:25:
+      74 │       map((dtos) => dtos.map((dto) => this.mapFromDto(dto))),
+         ╵                          ~~~
+
+
+X [ERROR] TS7006: Parameter 'dto' implicitly has an 'any' type. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:74:30:
+      74 │       map((dtos) => dtos.map((dto) => this.mapFromDto(dto))),
+         ╵                               ~~~
+
+
+X [ERROR] TS2322: Type 'Observable<{ data: any; type: HttpEventType.Sent; } | { data: any; type: HttpEventType.ResponseHeader; headers: HttpHeaders; status: number; statusText: string; url: string | null; ok: boolean; } | { ...; } | { ...; } | { ...; }>' is not assignable to type 'Observable<PaginatedResponse<TModel>>'.
+  Type '{ data: any; type: HttpEventType.Sent; } | { data: any; type: HttpEventType.ResponseHeader; headers: HttpHeaders; status: number; statusText: string; url: string | null; ok: boolean; } | { ...; } | { ...; } | { ...; }' is not assignable to type 'PaginatedResponse<TModel>'.
+    Type '{ data: any; type: HttpEventType.Sent; }' is missing the following properties from type 'PaginatedResponse<TModel>': total, page, limit, totalPages [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:90:4:
+      90 │     return this.http.get<PaginatedResponse<TDto>>(this.baseUrl, op...
+         ╵     ~~~~~~
+
+
+X [ERROR] TS2339: Property 'data' does not exist on type 'HttpEvent<PaginatedResponse<TDto>>'.
+  Property 'data' does not exist on type 'HttpSentEvent'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:94:23:
+      94 │         data: response.data.map((dto) => this.mapFromDto(dto)),
+         ╵                        ~~~~
+
+
+X [ERROR] TS7006: Parameter 'dto' implicitly has an 'any' type. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:94:33:
+      94 │         data: response.data.map((dto) => this.mapFromDto(dto)),
+         ╵                                  ~~~
+
+
+X [ERROR] TS2345: Argument of type 'HttpEvent<TDto>' is not assignable to parameter of type 'TDto'.
+  'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:109:35:
+      109 │       map((dto) => this.mapFromDto(dto)),
+          ╵                                    ~~~
+
+
+X [ERROR] TS2345: Argument of type 'HttpEvent<TDto>' is not assignable to parameter of type 'TDto'.
+  'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:123:35:
+      123 │       map((dto) => this.mapFromDto(dto)),
+          ╵                                    ~~~
+
+
+X [ERROR] TS2345: Argument of type 'HttpEvent<TDto>' is not assignable to parameter of type 'TDto'.
+  'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:140:35:
+      140 │       map((dto) => this.mapFromDto(dto)),
+          ╵                                    ~~~
+
+
+X [ERROR] TS2345: Argument of type 'HttpEvent<TDto>' is not assignable to parameter of type 'TDto'.
+  'TDto' could be instantiated with an arbitrary type which could be unrelated to 'HttpEvent<TDto>'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:157:35:
+      157 │       map((dto) => this.mapFromDto(dto)),
+          ╵                                    ~~~
+
+
+X [ERROR] TS2322: Type 'Observable<HttpEvent<void>>' is not assignable to type 'Observable<void>'.
+  Type 'HttpEvent<void>' is not assignable to type 'void'.
+    Type 'HttpSentEvent' is not assignable to type 'void'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:168:4:
+      168 │     return this.http.delete<void>(`${this.baseUrl}/${id}`, option...
+          ╵     ~~~~~~
+
+
+X [ERROR] TS2339: Property 'map' does not exist on type 'HttpEvent<TDto[]>'.
+  Property 'map' does not exist on type 'HttpSentEvent'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:181:25:
+      181 │       map((dtos) => dtos.map((dto) => this.mapFromDto(dto))),
+          ╵                          ~~~
+
+
+X [ERROR] TS7006: Parameter 'dto' implicitly has an 'any' type. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:181:30:
+      181 │       map((dtos) => dtos.map((dto) => this.mapFromDto(dto))),
+          ╵                               ~~~
+
+
+X [ERROR] TS2322: Type 'Observable<HttpEvent<void>>' is not assignable to type 'Observable<void>'.
+  Type 'HttpEvent<void>' is not assignable to type 'void'.
+    Type 'HttpSentEvent' is not assignable to type 'void'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/crud-base.service.ts:189:4:
+      189 │     return this.http
+          ╵     ~~~~~~
+
+
+X [ERROR] TS2322: Type 'Observable<unknown>' is not assignable to type 'Observable<T>'.
+  Type 'unknown' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'unknown'. [plugin angular-compiler]
+
+    libs/data-access/src/lib/services/websocket.service.ts:161:4:
+      161 │     return this.messages$.pipe(
+          ╵     ~~~~~~
+
+
+X [ERROR] Could not resolve "@angular/animations/browser"
+
+    node_modules/@angular/platform-browser/fesm2022/animations/async.mjs:53:51:
+      53 │ ....moduleImpl ?? import('@angular/animations/browser').then(m => m);
+         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  You can mark the path "@angular/animations/browser" as external to exclude it from the bundle, which will remove this error and leave the unresolved path in the bundle. You can also add ".catch()" here to handle this failure at run-time instead of bundle-time.
+
+

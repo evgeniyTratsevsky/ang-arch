@@ -146,6 +146,59 @@
         "implicitDependencies": []
       }
     },
+    "data-access": {
+      "name": "data-access",
+      "type": "lib",
+      "data": {
+        "root": "libs/data-access",
+        "targets": {
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "options": {},
+            "configurations": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ]
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/data-access/jest.config.cts",
+              "tsConfig": "libs/data-access/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          }
+        },
+        "name": "data-access",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/data-access/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
     "ui-kit": {
       "name": "ui-kit",
       "type": "lib",
@@ -767,6 +820,15 @@
         "hash": "sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw=="
       }
     },
+    "npm:@angular/animations": {
+      "type": "npm",
+      "name": "npm:@angular/animations",
+      "data": {
+        "version": "19.2.15",
+        "packageName": "@angular/animations",
+        "hash": "sha512-eq9vokLU8bjs7g/Znz8zJUQEOhT0MAJ/heBCHbB35S+CtZXJmItrsEqkI1tsRiR58NKXB6cbhBhULVo6qJbhXQ=="
+      }
+    },
     "npm:@angular/build": {
       "type": "npm",
       "name": "npm:@angular/build",
@@ -780,54 +842,9 @@
       "type": "npm",
       "name": "npm:@angular/cdk",
       "data": {
-        "version": "21.0.0",
+        "version": "19.2.19",
         "packageName": "@angular/cdk",
-        "hash": "sha512-wCr5D3mEC+p69IMDC7vf8bWx18mfUNNRdsiK3XD0m1PqfeNfnCJb+Bnkks37MC/SU01uCNrAokRaTbWL6pk1Wg=="
-      }
-    },
-    "npm:entities@6.0.1": {
-      "type": "npm",
-      "name": "npm:entities@6.0.1",
-      "data": {
-        "version": "6.0.1",
-        "packageName": "entities",
-        "hash": "sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g=="
-      }
-    },
-    "npm:entities": {
-      "type": "npm",
-      "name": "npm:entities",
-      "data": {
-        "version": "4.5.0",
-        "packageName": "entities",
-        "hash": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="
-      }
-    },
-    "npm:parse5@8.0.0": {
-      "type": "npm",
-      "name": "npm:parse5@8.0.0",
-      "data": {
-        "version": "8.0.0",
-        "packageName": "parse5",
-        "hash": "sha512-9m4m5GSgXjL4AjumKzq1Fgfp3Z8rsvjRNbnkVwfu2ImRqE5D0LnY2QfDen18FSY9C573YU5XxSapdHZTZ2WolA=="
-      }
-    },
-    "npm:parse5@4.0.0": {
-      "type": "npm",
-      "name": "npm:parse5@4.0.0",
-      "data": {
-        "version": "4.0.0",
-        "packageName": "parse5",
-        "hash": "sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA=="
-      }
-    },
-    "npm:parse5": {
-      "type": "npm",
-      "name": "npm:parse5",
-      "data": {
-        "version": "7.3.0",
-        "packageName": "parse5",
-        "hash": "sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw=="
+        "hash": "sha512-PCpJagurPBqciqcq4Z8+3OtKLb7rSl4w/qBJoIMua8CgnrjvA1i+SWawhdtfI1zlY8FSwhzLwXV0CmWWfFzQPg=="
       }
     },
     "npm:@angular/cli": {
@@ -933,9 +950,9 @@
       "type": "npm",
       "name": "npm:@angular/material",
       "data": {
-        "version": "21.0.0",
+        "version": "19.2.19",
         "packageName": "@angular/material",
-        "hash": "sha512-s3+fhN7F5T1TAltZXYXOgY1wuVbICCrBJpV2TN8nJXDT0wroTYAljgBmsr6ZjDwYJewwP0OPvcj2NlOGDpa6oA=="
+        "hash": "sha512-auIE6JUzTIA3LyYklh9J/T7u64crmphxUBgAa0zcOMDog6SYfwbNe9YeLQqua5ek4OUAOdK/BHHfVl5W5iaUoQ=="
       }
     },
     "npm:@angular/platform-browser": {
@@ -4961,6 +4978,24 @@
         "hash": "sha512-FMJTLMXfCLMLfJxcX9PFqX5qD88Z5MRGaZCVzfuqeZSPsyiBzs+pahDQjbIWz2QIzPZz0NX9Zy4FX3lmK6YHIg=="
       }
     },
+    "npm:parse5@4.0.0": {
+      "type": "npm",
+      "name": "npm:parse5@4.0.0",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "parse5",
+        "hash": "sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA=="
+      }
+    },
+    "npm:parse5": {
+      "type": "npm",
+      "name": "npm:parse5",
+      "data": {
+        "version": "7.3.0",
+        "packageName": "parse5",
+        "hash": "sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw=="
+      }
+    },
     "npm:@nx/web": {
       "type": "npm",
       "name": "npm:@nx/web",
@@ -8982,6 +9017,24 @@
         "version": "2.3.6",
         "packageName": "enquirer",
         "hash": "sha512-yjNnPr315/FjS4zIsUxYguYUPP2e1NK4d7E7ZOLiyYCcbFBiTMyID+2wvm2w6+pZ/odMA7cRkjhsPbltwBOrLg=="
+      }
+    },
+    "npm:entities": {
+      "type": "npm",
+      "name": "npm:entities",
+      "data": {
+        "version": "4.5.0",
+        "packageName": "entities",
+        "hash": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="
+      }
+    },
+    "npm:entities@6.0.1": {
+      "type": "npm",
+      "name": "npm:entities@6.0.1",
+      "data": {
+        "version": "6.0.1",
+        "packageName": "entities",
+        "hash": "sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g=="
       }
     },
     "npm:env-paths": {
@@ -14458,11 +14511,6 @@
       },
       {
         "source": "main-application",
-        "target": "ui-kit",
-        "type": "static"
-      },
-      {
-        "source": "main-application",
         "target": "npm:@angular/common",
         "type": "static"
       },
@@ -14473,6 +14521,58 @@
       },
       {
         "source": "main-application",
+        "target": "ui-kit",
+        "type": "static"
+      },
+      {
+        "source": "main-application",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "main-application",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "main-application",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "main-application",
+        "target": "data-access",
+        "type": "static"
+      },
+      {
+        "source": "main-application",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "data-access": [
+      {
+        "source": "data-access",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -14698,6 +14798,11 @@
       {
         "source": "arch-app",
         "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "arch-app",
+        "target": "npm:@angular/animations",
         "type": "static"
       },
       {
@@ -15539,6 +15644,23 @@
         "type": "static"
       }
     ],
+    "npm:@angular/animations": [
+      {
+        "source": "npm:@angular/animations",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/animations",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/animations",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
     "npm:@angular/build": [
       {
         "source": "npm:@angular/build",
@@ -15704,24 +15826,27 @@
     "npm:@angular/cdk": [
       {
         "source": "npm:@angular/cdk",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
         "target": "npm:rxjs",
         "type": "static"
       },
       {
         "source": "npm:@angular/cdk",
-        "target": "npm:parse5@8.0.0",
+        "target": "npm:parse5",
         "type": "static"
       },
       {
         "source": "npm:@angular/cdk",
         "target": "npm:tslib",
-        "type": "static"
-      }
-    ],
-    "npm:parse5@8.0.0": [
-      {
-        "source": "npm:parse5@8.0.0",
-        "target": "npm:entities@6.0.1",
         "type": "static"
       }
     ],
@@ -16017,6 +16142,26 @@
       },
       {
         "source": "npm:@angular/material",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
         "target": "npm:rxjs",
         "type": "static"
       },
@@ -16027,6 +16172,11 @@
       }
     ],
     "npm:@angular/platform-browser": [
+      {
+        "source": "npm:@angular/platform-browser",
+        "target": "npm:@angular/animations",
+        "type": "static"
+      },
       {
         "source": "npm:@angular/platform-browser",
         "target": "npm:@angular/common",
@@ -34042,5 +34192,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1763634978212
+  "computedAt": 1763642711041
 }

@@ -1,0 +1,19 @@
+> Building...
+√ Building...
+Initial chunk files | Names                   |  Raw size
+chunk-5GMTDZ75.js   | -                       | 875.83 kB | 
+chunk-TXSMMJVH.js   | -                       | 313.38 kB | 
+main.js             | main                    | 224.10 kB | 
+polyfills.js        | polyfills               |  89.77 kB | 
+styles.css          | styles                  | 639 bytes | 
+
+                    | Initial total           |   1.50 MB
+
+Lazy chunk files    | Names                   |  Raw size
+chunk-PNZNKEBL.js   | realtime-demo-component |   1.01 MB | 
+chunk-GJD46CNA.js   | browser                 | 154.78 kB | 
+
+Application bundle generation complete. [7.447 seconds]
+
+Output location: c:\Wokrspace\Angular\Architecture\arch-app\dist\apps\main-application
+

@@ -1,0 +1,60 @@
+> Building...
+√ Building...
+Application bundle generation failed. [5.896 seconds]
+
+▲ [WARNING] TS-998113: CardComponent is not used within the template of InterceptorsDemoComponent [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:30:4:
+      30 │     CardComponent,
+         ╵     ~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: ButtonComponent is not used within the template of InterceptorsDemoComponent [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:31:4:
+      31 │     ButtonComponent,
+         ╵     ~~~~~~~~~~~~~~~
+
+
+X [ERROR] Could not resolve "../../../core/interceptors"
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:12:31:
+      12 │ import { clearHttpCache } from '../../../core/interceptors';
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] TS2307: Cannot find module '../../../core/interceptors' or its corresponding type declarations. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:12:31:
+      12 │ import { clearHttpCache } from '../../../core/interceptors';
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:177:14:
+      177 │               <div class="info-box warning">
+          ╵               ~~~~
+
+
+X [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:217:11:
+      217 │   headers: {{ '{' }}...{{ '}' }},
+          ╵            ^
+
+
+X [ERROR] NG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.) [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:389:2:
+      389 │   `,
+          ╵   ^
+
+
+X [ERROR] TS2872: This kind of expression is always truthy. [plugin angular-compiler]
+
+    apps/main-application/src/app/features/interceptors-demo/interceptors-demo.component.ts:686:30:
+      686 │ ...nst consoleOutput = '[HttpCache] Cache hit' || '[HttpCache] Ca...
+          ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+

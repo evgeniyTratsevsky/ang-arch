@@ -1,0 +1,25 @@
+> Building...
+√ Building...
+Initial chunk files | Names                       |  Raw size
+chunk-RQQNYMLD.js   | -                           | 883.48 kB | 
+chunk-Q32OZTGA.js   | -                           | 255.95 kB | 
+chunk-UE3L2BK6.js   | -                           | 211.05 kB | 
+polyfills.js        | polyfills                   |  89.77 kB | 
+chunk-RXZ5MNYA.js   | -                           |  58.30 kB | 
+main.js             | main                        |  13.96 kB | 
+styles.css          | styles                      | 639 bytes | 
+
+                    | Initial total               |   1.51 MB
+
+Lazy chunk files    | Names                       |  Raw size
+chunk-272RYH7J.js   | -                           | 708.74 kB | 
+chunk-JIGRMEXV.js   | interceptors-demo-component | 330.88 kB | 
+chunk-FTCEVJRO.js   | realtime-demo-component     | 293.91 kB | 
+chunk-AYDQX2OC.js   | browser                     | 154.78 kB | 
+chunk-QV7EAE6O.js   | home-component              |  19.97 kB | 
+chunk-XTH3Z2SC.js   | -                           |  14.74 kB | 
+
+Application bundle generation complete. [3.855 seconds]
+
+Output location: c:\Wokrspace\Angular\Architecture\arch-app\dist\apps\main-application
+
