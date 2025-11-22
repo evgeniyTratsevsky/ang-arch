@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx build main-application --configuration=development",
-    "startTime": "2025-11-20T12:45:07.127Z",
-    "endTime": "2025-11-20T12:45:15.535Z",
+    "startTime": "2025-11-20T12:59:29.533Z",
+    "endTime": "2025-11-20T12:59:38.897Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "main-application:build:development",
       "target": "build",
       "projectName": "main-application",
-      "hash": "15290400736238892964",
-      "startTime": "2025-11-20T12:45:07.153Z",
-      "endTime": "2025-11-20T12:45:15.355Z",
+      "hash": "9956686205984933115",
+      "startTime": "2025-11-20T12:59:29.554Z",
+      "endTime": "2025-11-20T12:59:38.708Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

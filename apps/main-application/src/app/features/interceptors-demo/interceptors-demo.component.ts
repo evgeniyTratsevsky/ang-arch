@@ -350,41 +350,108 @@ import { FormsModule } from '@angular/forms';
   `,
   styles: [`
     .interceptors-demo {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
       padding: 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 0 0 0.5rem 0;
-        color: #333;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
       }
 
       .subtitle {
-        font-size: 1.2rem;
-        color: #666;
+        font-size: 1.3rem;
+        color: rgba(255,255,255,0.95);
         margin: 0 0 2rem 0;
+        text-align: center;
+        font-weight: 300;
       }
     }
 
+    ::ng-deep .mat-mdc-tab-group {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    ::ng-deep .mat-mdc-tab-header {
+      background: #f8f9fa;
+      border-bottom: 2px solid #e9ecef;
+    }
+
+    ::ng-deep .mat-mdc-tab-label {
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+      padding: 0 24px !important;
+      min-width: 120px !important;
+    }
+
     .tab-content {
-      padding: 2rem 0;
+      padding: 2rem;
+      background: white;
+    }
+
+    ::ng-deep mat-card {
+      box-shadow: none !important;
+      border: 1px solid #e9ecef;
+      border-radius: 12px !important;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important;
+      }
+    }
+
+    ::ng-deep mat-card-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 1.5rem !important;
+      margin: -1px -1px 0 -1px !important;
+
+      mat-card-title {
+        color: white !important;
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+        margin: 0 !important;
+      }
+
+      mat-card-subtitle {
+        color: rgba(255,255,255,0.9) !important;
+        font-size: 1rem !important;
+        margin: 0.5rem 0 0 0 !important;
+      }
+    }
+
+    ::ng-deep mat-card-content {
+      padding: 2rem !important;
     }
 
     .info-box {
-      background: #f5f5f5;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
       padding: 1.5rem;
-      border-radius: 8px;
+      border-radius: 12px;
       margin-bottom: 1.5rem;
+      border: 1px solid #dee2e6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 
       &.warning {
-        background: #fff3cd;
-        border-left: 4px solid #ffc107;
+        background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+        border-color: #ffc107;
       }
 
       h3 {
         margin: 0 0 1rem 0;
-        color: #333;
+        color: #495057;
+        font-size: 1.2rem;
+        font-weight: 600;
       }
 
       ul, ol {
@@ -392,17 +459,26 @@ import { FormsModule } from '@angular/forms';
         padding-left: 1.5rem;
 
         li {
-          margin: 0.5rem 0;
-          line-height: 1.6;
+          margin: 0.75rem 0;
+          line-height: 1.8;
+          color: #495057;
         }
       }
 
       code {
-        background: #e0e0e0;
-        padding: 0.2rem 0.4rem;
-        border-radius: 3px;
-        font-family: 'Courier New', monospace;
+        background: rgba(0,0,0,0.05);
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
         font-size: 0.9rem;
+        color: #d63384;
+        border: 1px solid rgba(0,0,0,0.1);
+      }
+
+      p {
+        line-height: 1.8;
+        color: #495057;
+        margin: 0.5rem 0;
       }
     }
 
@@ -411,7 +487,9 @@ import { FormsModule } from '@angular/forms';
 
       h3 {
         margin: 0 0 1rem 0;
-        color: #333;
+        color: #495057;
+        font-size: 1.2rem;
+        font-weight: 600;
       }
     }
 
@@ -422,73 +500,162 @@ import { FormsModule } from '@angular/forms';
       margin: 1rem 0;
     }
 
+    ::ng-deep button.mat-mdc-raised-button {
+      border-radius: 8px !important;
+      font-weight: 500 !important;
+      padding: 0 24px !important;
+      height: 42px !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+      transition: all 0.2s ease !important;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
     .result-box {
       padding: 1.5rem;
-      border-radius: 8px;
+      border-radius: 12px;
       margin: 1.5rem 0;
-      border-left: 4px solid #ccc;
-      background: #e9ecef;
+      border: 2px solid;
+      animation: slideIn 0.3s ease;
 
       &.success {
-        background: #d4edda;
+        background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
         border-color: #28a745;
+        box-shadow: 0 4px 12px rgba(40,167,69,0.15);
       }
 
       &.error {
-        background: #f8d7da;
+        background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
         border-color: #dc3545;
+        box-shadow: 0 4px 12px rgba(220,53,69,0.15);
       }
 
       &.info {
-        background: #d1ecf1;
+        background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
         border-color: #17a2b8;
+        box-shadow: 0 4px 12px rgba(23,162,184,0.15);
       }
 
       strong {
         display: block;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
       }
 
       p {
         margin: 0.5rem 0 0 0;
-        line-height: 1.6;
+        line-height: 1.8;
+        color: #495057;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
     .hint {
-      color: #666;
-      font-size: 0.9rem;
+      color: #6c757d;
+      font-size: 0.95rem;
       margin-top: 1rem;
       font-style: italic;
+      padding: 0.75rem;
+      background: #f8f9fa;
+      border-radius: 6px;
+      border-left: 3px solid #6c757d;
     }
 
-    mat-form-field {
+    ::ng-deep mat-form-field {
       width: 100%;
       max-width: 400px;
       display: block;
       margin: 1rem 0;
+
+      .mat-mdc-form-field-focus-overlay {
+        background-color: rgba(102, 126, 234, 0.05);
+      }
     }
 
     .stats {
-      margin: 1rem 0;
-      padding: 1rem;
-      background: #f8f9fa;
-      border-radius: 4px;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+      border-radius: 12px;
+      border: 1px solid #2196f3;
+      box-shadow: 0 2px 8px rgba(33,150,243,0.1);
 
       p {
-        margin: 0.5rem 0;
-        font-weight: 500;
+        margin: 0.75rem 0;
+        font-weight: 600;
+        color: #1976d2;
+        font-size: 1.1rem;
       }
     }
 
     .interceptor-flow {
       background: white;
-      padding: 1rem 1.5rem;
-      border-radius: 4px;
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 
       li {
-        margin: 0.75rem 0;
-        font-size: 1rem;
+        margin: 1rem 0;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #f8f9fa;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        strong {
+          color: #667eea;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .interceptors-demo {
+        padding: 1rem;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .subtitle {
+          font-size: 1rem;
+        }
+      }
+
+      .tab-content {
+        padding: 1rem;
+      }
+
+      ::ng-deep mat-card-content {
+        padding: 1rem !important;
+      }
+
+      .button-group {
+        flex-direction: column;
+
+        button {
+          width: 100%;
+        }
       }
     }
   `],

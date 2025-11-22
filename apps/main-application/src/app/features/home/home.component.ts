@@ -125,26 +125,48 @@ import { CardComponent, ButtonComponent } from 'ui-kit';
     </div>
   `,
   styles: [`
+    :host {
+      display: block;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
     .home {
       max-width: 1400px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 3rem 2rem;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
+      animation: fadeInDown 0.6s ease;
 
       h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin: 0;
-        color: #333;
+        color: white;
+        font-weight: 700;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        letter-spacing: -1px;
       }
 
       .subtitle {
         font-size: 1.5rem;
-        color: #666;
+        color: rgba(255,255,255,0.95);
         margin: 1rem 0 0 0;
+        font-weight: 300;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
@@ -152,12 +174,35 @@ import { CardComponent, ButtonComponent } from 'ui-kit';
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      animation: fadeInUp 0.6s ease 0.2s both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    ::ng-deep lib-card {
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+      }
     }
 
     .card-actions {
@@ -169,69 +214,133 @@ import { CardComponent, ButtonComponent } from 'ui-kit';
       padding-left: 1.5rem;
 
       li {
-        margin: 0.5rem 0;
+        margin: 0.75rem 0;
+        line-height: 1.6;
+        font-size: 1rem;
       }
     }
 
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
+      padding: 1rem 0;
 
       .feature {
         text-align: center;
-        padding: 1rem;
+        padding: 2rem 1rem;
+        background: rgba(255,255,255,0.1);
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(255,255,255,0.15);
+          transform: translateY(-4px);
+        }
 
         h3 {
-          margin: 0 0 0.5rem 0;
-          font-size: 1.2rem;
+          margin: 0 0 0.75rem 0;
+          font-size: 1.3rem;
+          color: white;
         }
 
         p {
           margin: 0;
-          color: #666;
+          color: rgba(255,255,255,0.9);
+          line-height: 1.6;
         }
       }
     }
 
     .practices-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 1rem;
+      padding: 1rem 0;
 
       .practice {
-        padding: 1rem;
-        background: #f5f5f5;
-        border-radius: 4px;
+        padding: 1.25rem;
+        background: rgba(255,255,255,0.1);
+        border-radius: 8px;
         text-align: center;
         font-weight: 500;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: rgba(255,255,255,0.2);
+          transform: scale(1.05);
+        }
       }
     }
 
     .commands {
       display: grid;
       gap: 1rem;
+      padding: 1rem 0;
 
       .command {
-        background: #f5f5f5;
-        padding: 1rem;
-        border-radius: 4px;
-        border-left: 4px solid #2196f3;
+        background: rgba(255,255,255,0.1);
+        padding: 1.5rem;
+        border-radius: 12px;
+        border-left: 4px solid #4fc3f7;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: rgba(255,255,255,0.15);
+          transform: translateX(8px);
+        }
 
         code {
           display: block;
-          font-family: 'Courier New', monospace;
-          font-size: 0.95rem;
-          color: #2196f3;
+          font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+          font-size: 1rem;
+          color: #4fc3f7;
           font-weight: 600;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.75rem;
+          letter-spacing: 0.5px;
         }
 
         p {
           margin: 0;
-          color: #666;
-          font-size: 0.9rem;
+          color: rgba(255,255,255,0.9);
+          font-size: 0.95rem;
         }
+      }
+    }
+
+    ::ng-deep lib-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .home {
+        padding: 2rem 1rem;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+      }
+
+      .header .subtitle {
+        font-size: 1.2rem;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .practices-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       }
     }
   `],

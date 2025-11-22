@@ -1,1 +1,44 @@
-<router-outlet />
+<div class="app-container">
+  <mat-toolbar class="app-toolbar">
+    <div class="toolbar-content">
+      <div class="logo-section">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">Angular Architecture</span>
+      </div>
+      
+      <nav class="nav-links">
+        <button 
+          mat-button 
+          routerLink="/" 
+          [class.active]="isActive('/')"
+          class="nav-button"
+        >
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button 
+          mat-button 
+          routerLink="/demo" 
+          [class.active]="isActive('/demo')"
+          class="nav-button"
+        >
+          <mat-icon>science</mat-icon>
+          <span>Real-Time Demo</span>
+        </button>
+        <button 
+          mat-button 
+          routerLink="/interceptors" 
+          [class.active]="isActive('/interceptors')"
+          class="nav-button"
+        >
+          <mat-icon>settings_ethernet</mat-icon>
+          <span>Interceptors</span>
+        </button>
+      </nav>
+    </div>
+  </mat-toolbar>
+
+  <main class="main-content">
+    <router-outlet />
+  </main>
+</div>

@@ -14516,17 +14516,17 @@
       },
       {
         "source": "main-application",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "main-application",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       },
       {
         "source": "main-application",
         "target": "ui-kit",
-        "type": "static"
-      },
-      {
-        "source": "main-application",
-        "target": "npm:@angular/material",
         "type": "static"
       },
       {
@@ -34192,5 +34192,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1763642711041
+  "computedAt": 1763802433618
 }

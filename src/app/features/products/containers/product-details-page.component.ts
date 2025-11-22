@@ -26,45 +26,49 @@ import {
         <div class="loading">
           <mat-spinner></mat-spinner>
         </div>
-      } @else if (error$ | async; as error) {
-        <div class="error">
-          <p>Ошибка: {{ error }}</p>
-          <button mat-raised-button (click)="goBack()">Назад</button>
-        </div>
-      } @else if (product$ | async; as product) {
-        <mat-card>
-          <button mat-icon-button (click)="goBack()" class="back-button">
-            ← Назад
-          </button>
-          
-          <img mat-card-image [src]="product.imageUrl" [alt]="product.name" />
-          
-          <mat-card-header>
-            <mat-card-title>{{ product.name }}</mat-card-title>
-          </mat-card-header>
-          
-          <mat-card-content>
-            <p class="description">{{ product.description }}</p>
-            
-            <div class="details">
-              <div class="price">{{ product.formattedPrice }}</div>
-              <div class="stock" [class.in-stock]="product.inStock">
-                {{ product.inStock ? 'В наличии' : 'Нет в наличии' }}
-              </div>
-            </div>
-          </mat-card-content>
-          
-          <mat-card-actions>
-            <button
-              mat-raised-button
-              color="primary"
-              [disabled]="!product.inStock"
-              (click)="onAddToCart()"
-            >
-              Добавить в корзину
-            </button>
-          </mat-card-actions>
-        </mat-card>
+      } @else {
+        @if (error$ | async; as error) {
+          <div class="error">
+            <p>Ошибка: {{ error }}</p>
+            <button mat-raised-button (click)="goBack()">Назад</button>
+          </div>
+        } @else {
+          @if (product$ | async; as product) {
+            <mat-card>
+              <button mat-icon-button (click)="goBack()" class="back-button">
+                ← Назад
+              </button>
+              
+              <img mat-card-image [src]="product.imageUrl" [alt]="product.name" />
+              
+              <mat-card-header>
+                <mat-card-title>{{ product.name }}</mat-card-title>
+              </mat-card-header>
+              
+              <mat-card-content>
+                <p class="description">{{ product.description }}</p>
+                
+                <div class="details">
+                  <div class="price">{{ product.formattedPrice }}</div>
+                  <div class="stock" [class.in-stock]="product.inStock">
+                    {{ product.inStock ? 'В наличии' : 'Нет в наличии' }}
+                  </div>
+                </div>
+              </mat-card-content>
+              
+              <mat-card-actions>
+                <button
+                  mat-raised-button
+                  color="primary"
+                  [disabled]="!product.inStock"
+                  (click)="onAddToCart()"
+                >
+                  Добавить в корзину
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          }
+        }
       }
     </div>
   `,
